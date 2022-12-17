@@ -56,11 +56,13 @@ export class App extends Component  {
     return (
       <>
         <GlobalStyles/>
-      <Div>
+        <Div>
+         <h1>Phonebook</h1>
          <ContactForm addContact={ this.addContact} />
-       <Filter filterData={filterData} />
        
-         <h2>Contacts</h2>
+       
+          <h2>Contacts</h2>
+          <Filter filterData={filterData} />
          <ContactList contactArr={contactsAfterFilter} deleteContact={this.deleteContact} />
         </Div>
         </>
